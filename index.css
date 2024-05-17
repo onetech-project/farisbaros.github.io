@@ -1,0 +1,49 @@
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+#root {
+  background-image: url('https://images.pexels.com/photos/376533/pexels-photo-376533.jpeg?cs=srgb&dl=pexels-maumascaro-376533.jpg&fm=jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.main-header .navbar-dark:has(.navbar-collapse.collapse.show),
+.main-header .navbar-dark:has(.navbar-collapse.collapsing) {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: background-color .3s ease-in;
+}
+
+/* .main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+
+.main-content {
+  height: 100vh;
+  width: 100vw;
+  /* padding: 60px 0 0 0; */
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.main-profile,
+.main-skillset,
+.main-project,
+.main-education {
+  height: 100%;
+  width: 100%;
+  /* scroll-margin-top: 60px; */
+}
